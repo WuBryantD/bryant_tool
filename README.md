@@ -77,4 +77,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 #### Stylesheets
 
-Open index.js and insert code.   <code>import 'bootstrap/dist/css/bootstrap.min.css';</code>
+Open index.js and insert code. <p>  <code>import 'bootstrap/dist/css/bootstrap.min.css';</code>
+
+## `Install fontawesome`
+
+<code>npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome</code>
+<p>and</p>
+<code>npm i --save @fortawesome/free-solid-svg-icons</code>
