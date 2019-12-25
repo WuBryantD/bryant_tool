@@ -1,14 +1,27 @@
 import React, { PureComponent } from 'react'
-import { Card, ListGroup, Image, ListGroupItem, Button } from 'react-bootstrap';
+import {
+    Card,
+    ListGroup,
+    Image,
+    ListGroupItem,
+    Button
+} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkedAlt, faDollarSign, faShoePrints, faCalendar, faTicketAlt, faParking, faCheckCircle, faUtensils, faPaw, faTimesCircle, } from '@fortawesome/free-solid-svg-icons'
+import {
+    faMapMarkedAlt,
+    faDollarSign,
+    faShoePrints,
+    faCalendar,
+    faTicketAlt,
+    faParking,
+    faCheckCircle,
+    faUtensils,
+    faPaw,
+    faTimesCircle,
+} from '@fortawesome/free-solid-svg-icons'
 import play from '../img/play.png'
 
 export default class Cards extends PureComponent {
-    static propTypes = {
-
-    }
-
     render() {
         return (
             <div>
@@ -30,7 +43,7 @@ export default class Cards extends PureComponent {
                         <ListGroupItem>
                             <div style={{ fontSize: '0.75rem' }}>景點資訊</div>
                             <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
-                                <div style={{ width: '50%' }} ><FontAwesomeIcon color='	#55AA00' icon={faTicketAlt} /> &nbsp;門票<FontAwesomeIcon color='green' icon={faCheckCircle} /></div>
+                                <div style={{ width: '50%' }} ><FontAwesomeIcon color='darkorange' icon={faTicketAlt} /> &nbsp;門票<FontAwesomeIcon color='green' icon={faCheckCircle} /></div>
                                 <div style={{ width: '50%' }}><FontAwesomeIcon icon={faParking} color='blue' /> &nbsp;停車位<FontAwesomeIcon color='green' icon={faCheckCircle} /></div>
                                 <div style={{ width: '50%' }}><FontAwesomeIcon icon={faUtensils} color='gray' /> &nbsp;附近餐廳<FontAwesomeIcon color='green' icon={faCheckCircle} /></div>
                                 <div style={{ width: '50%' }}><FontAwesomeIcon icon={faPaw} color='	#EE7700' /> &nbsp;攜帶寵物<FontAwesomeIcon color='red' icon={faTimesCircle} /></div>
