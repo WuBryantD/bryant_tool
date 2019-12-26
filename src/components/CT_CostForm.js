@@ -8,16 +8,16 @@ import {
 export default class CT_CostForm extends Component {
     render() {
 
-        const colStyle ={ borderStyle: 'solid', borderWidth: '0.5px' ,padding:'0 0'};
-        const inputStyle = {height:'100%',width:'100%'};
+        const colStyle = { borderStyle: 'solid', borderWidth: '0.5px', padding: '0 0' };
+        const inputStyle = { height: '100%', width: '100%' };
         return (
             <div>
-                <Container style={{fontSize:'0.85rem',borderStyle: 'solid', borderWidth: '0.5px'}}>
+                <Container style={{ fontSize: '0.85rem', borderStyle: 'solid', borderWidth: '0.5px' }}>
                     <Row  >
                         <Col xs='8' sm='8' lg='6' style={colStyle}  >
                             商品名稱
                         </Col>
-                        <Col xs='2'  sm='2' lg='2' style={colStyle}>
+                        <Col xs='2' sm='2' lg='2' style={colStyle}>
                             類別
                         </Col>
                         <Col xs='2' sm='2' lg='4' style={colStyle}>

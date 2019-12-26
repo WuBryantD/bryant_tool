@@ -5,7 +5,6 @@ import {
     Container,
     Row,
     Col,
-    Button,
 } from 'react-bootstrap'
 
 export class CreateTravel extends Component {
@@ -44,6 +43,14 @@ export class CreateTravel extends Component {
                             結束日 &nbsp;<input type='date' style={{ borderRadius: '5px', borderStyle: 'solid', borderColor: 'lightgray' }}></input>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col sm='3' lg='2'>
+                            花費金額
+                        </Col>
+                        <Col sm='9' lg='10'>
+                            XXXXX元
+                        </Col>
+                    </Row>
                     <br />
                     <Row>
                         <Col sm='3' lg='2'>
@@ -53,13 +60,17 @@ export class CreateTravel extends Component {
                             <br />
                             <Row>
                                 <Col lg='12'>
-                                    DAY1
-                            <TravelForm />
+                                    <TravelForm />
                                 </Col>
+
+                            </Row>
+                            <br />
+                            <Row>
                                 <Col sm='3' lg='12'>
                                     <Path />
                                 </Col>
                             </Row>
+
                         </Col>
 
                     </Row>
