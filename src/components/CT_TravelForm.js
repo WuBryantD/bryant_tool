@@ -10,6 +10,7 @@ import CostForm from './CT_CostForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faTimes } from '@fortawesome/free-solid-svg-icons'
 
+import {connect} from "react-redux"; //react 組件 與 store 連接
 
 export class CT_TravelForm extends Component {
     render() {
@@ -25,7 +26,7 @@ export class CT_TravelForm extends Component {
                             景點名稱
                         </Col>
                         <Col sm='9' lg='10'>
-                            <input type='text' style={{ borderRadius: '10px', borderStyle: 'solid', borderColor: 'lightgray' }} placeholder='請輸入景點名稱'></input>
+        <input type='text' style={{ borderRadius: '10px', borderStyle: 'solid', borderColor: 'lightgray' }} placeholder='請輸入景點名稱'></input>
                         </Col>
                     </Row>
                     <br />
@@ -51,7 +52,7 @@ export class CT_TravelForm extends Component {
                     <br />
                     <Row>
                         <Col sm='3' lg='2'>
-                            抵達時間
+                            開始時間
                                 </Col>
                         <Col sm='9' lg='10'>
                             <input type='datetime-local'  ></input>
@@ -139,4 +140,11 @@ export class CT_TravelForm extends Component {
         )
     }
 }
-export default CT_TravelForm
+
+const mapStateToProps =state=>{
+    return{
+        attrationsData:state.attrationsData
+    }
+}
+
+export default connect(mapStateToProps)(CT_TravelForm)

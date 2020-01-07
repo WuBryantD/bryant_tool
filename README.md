@@ -84,3 +84,8 @@ Open index.js and insert code. <p>  <code>import 'bootstrap/dist/css/bootstrap.m
 <code>npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome</code>
 <p>and</p>
 <code>npm i --save @fortawesome/free-solid-svg-icons</code>
+
+## `Install React-Redux`
+
+<code>npm install react-redux</code>
+<code>npm install redux</code>
