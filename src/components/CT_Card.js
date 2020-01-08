@@ -20,8 +20,10 @@ import {
     faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons'
 import play from '../img/play.png'
+import {connect} from 'react-redux'
 
-export default class Cards extends PureComponent {
+
+class CT_Card extends PureComponent {
     render() {
         return (
             <div>
@@ -80,3 +82,13 @@ export default class Cards extends PureComponent {
         )
     }
 }
+
+const mapStateToProps = state => { //store裡面的state
+    return {
+        titleInput: state.CT_titleInput,
+        startDateInput: state.CT_startDateInput,
+        endDateInput: state.CT_endDateInput,
+    }
+}
+
+export default connect(mapStateToProps)(CT_Card)

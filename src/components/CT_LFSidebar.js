@@ -12,7 +12,6 @@ import { faBus, faSubway, faTrain, faPlane, faShoePrints, faShip, faTaxi, faCarS
  class CT_LFSidebar extends Component {
     render() {
         const data = this.props.data;
-        console.log('aaa', data)
         return (
             <div>
                 <Container fluid='true' style={{ borderStyle: 'solid', borderWidth: '0.5px', width: '100%' }}>
