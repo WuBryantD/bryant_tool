@@ -5,14 +5,6 @@ export const handleInput_CT_title = (event) => {
     }
 }
 
-export const handleInput_CT_days = (event)=>{
-    return{
-        type:'HANDLE_INPUT_CT_DAYS',
-        days:event.target.value
-    }
-}
-
-
 export const handleInput_CT_startDate = (event) => {
     return {
         type: 'HANDLE_INPUT_CT_STARTDATE',
@@ -27,29 +19,33 @@ export const handleInput_CT_endDate = (event) => {
     }
 }
 
-export const handleBtn_CT_createAttraction = ()=>{
+export const handleBtn_CT_createAttraction = () => {
     return {
-        type:'HANDLE_BTN_CT_CREATEATTRACTION'
+        type: 'HANDLE_BTN_CT_CREATEATTRACTION'
     }
 }
 
-export const handleBtn_CT_createTravel = ()=>{
+export const handleBtn_CT_createTravel = () => {
     return {
-        type:'HANDLE_BTN_CT_CREATETRAVEL'
+        type: 'HANDLE_BTN_CT_CREATETRAVEL'
     }
 }
 
-export const handleBtn_CT_createTravel_create = ()=>{
+export const handleBtn_CT_createTravel_create = () => {
     return {
-        type:'HANDLE_BTN_CT_CREATETRAVEL_CREATE'
+        type: 'HANDLE_BTN_CT_CREATETRAVEL_CREATE'
     }
 }
 
-export const handleBtn_CT_createTravel_cancel = ()=>{
+export const handleBtn_CT_createTravel_cancel = () => {
     return {
-        type:'HANDLE_BTN_CT_CREATETRAVEL_CANCEL'
+        type: 'HANDLE_BTN_CT_CREATETRAVEL_CANCEL'
     }
 }
 
-
-
+export const handelSelect_CT_createTravel_Days = (event) => {
+    return {
+        type: 'HANDLE_SELECT_CT_CREATE_DAYS',
+        selectDay: event.target.value
+    }
+}

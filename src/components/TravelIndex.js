@@ -13,7 +13,7 @@ export class TravelIndex extends Component {
             <Col xs='false' lg='2' style={{ backgroundColor: 'gray', color: 'white', borderStyle: 'solid', borderWidth: '0 0.5px', borderColor: 'black', padding: '1px 1px' }} >
               {/* {this.props.createDate.map((data,index) => {
                 return (
-                  data.travelData.map((data, index) => {
+                  data.attractionData.map((data, index) => {
                     return <LFSidebar key={index} data={data} />
                   })
                 )

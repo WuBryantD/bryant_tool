@@ -8,9 +8,8 @@ import {
     Button,
     Modal,
 } from 'react-bootstrap'
-
 import { connect } from "react-redux"; //react 組件 與 store 連接
-import { handleInput_CT_title, handleInput_CT_startDate, handleInput_CT_endDate, handleInput_CT_days, handleBtn_CT_createAttraction, handleBtn_CT_createTravel, handleBtn_CT_createTravel_create, handleBtn_CT_createTravel_cancel } from '../actions/index'
+import { handleInput_CT_title, handleInput_CT_startDate, handleInput_CT_endDate, handleBtn_CT_createAttraction, handleBtn_CT_createTravel, handleBtn_CT_createTravel_create, handleBtn_CT_createTravel_cancel } from '../actions/index'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrownOpen } from '@fortawesome/free-solid-svg-icons';
 import AttractionCard from '../components/CT_Card'
@@ -19,9 +18,9 @@ class CreateTravel extends Component {
 
     render() {
         let Data = this.props.data
-        let title = Data[0].title
-        let startDate = Data[0].startDate
-        let endDate = Data[0].endDate
+        let title = Data[this.props.currentId-1].title
+        let startDate = Data[this.props.currentId-1].startDate
+        let endDate = Data[this.props.currentId-1].endDate
         let handleTitleBorderStyle = 'lightgray'
         let handleStartDateBorderStyle = 'lightgray'
         let handleEndDateBorderStyle = 'lightgray'
@@ -257,7 +256,8 @@ const mapStateToProps = state => { //store裡面的state
         createTravelError_startDateNull: state.CT_createTravelError_startDateNull,
         createTravelError_endDateNull: state.CT_createTravelError_endDateNull,
         createTravelError_endDateSmall: state.CT_createTravelError_endDateSmall,
-        createTravelError_titleNull: state.CT_createTravelError_titleNull
+        createTravelError_titleNull: state.CT_createTravelError_titleNull,
+        currentId:state.CT_currentTravelId
     }
 }
 
@@ -271,9 +271,6 @@ const mapDispatchToProps = dispatch => {
         },
         handleInputEndDate: (val) => {
             dispatch(handleInput_CT_endDate(val))
-        },
-        handleInput_Days: (val) => {
-            dispatch(handleInput_CT_days(val))
         },
         handleBtn_createAttraction: () => {
             dispatch(handleBtn_CT_createAttraction())
